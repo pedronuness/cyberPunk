@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css?family=Libre+Barcode+39+Text');
+
+*{margin: 0;padding: 0;color: #fff;text-decoration: none;list-style: none;box-sizing: border-box;font-family: monospace;font-size: 16px;}
+img{width: 100%;}
+
+
+body{
+    background: #1B1E23;
+}
+h2{
+    font-size: 32px;
+}
+p{
+    line-height: 1.5;
+}
+
+.sub-title{
+    text-align: center;
+    margin: 30px 0 15px 0;
+}
+.sub-title::after{
+    content: '';
+    display: block;
+    margin: 5px auto 0 auto;
+    background: #7E0885;
+    width: 320px;
+    height: 3px;
+}
+.texto{
+    margin: 15px;
+    padding: 0 60px;
+}
+.banner-conteudo {
+    height: 600px; 
+    margin-top: 30px;
+}
+.cort-img{
+    height: 260px;
+    overflow: hidden;
+}
+
+.logo img{
+	cursor: pointer;
+}
+
+/*Menu*/
+header{
+    background: #7E0885;
+    padding: 10px 0;
+    position:fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 999;
+    box-shadow: 0 5px 40px #7E0885;
+}
+
+.menu-nav ul{
+	text-align: right;
+}
+
+.menu-nav ul li{
+    display: inline-block;
+	margin: 15px 0;
+}
+
+.menu-nav ul li a{
+    font-size: 18px;
+    padding: 25px 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.menu-nav ul li a::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: scaleY(0);
+    transform-origin: bottom center;
+    background: rgba(90, 16, 95,1); 
+    z-index: -1;
+    transition: transform 0.3s;
+}
+.menu-nav ul li a:hover::after, .menu-nav ul li a.active:after {
+    transform: scaleY(1);
+}
+
+/*Fim Menu*/
+
+.banner{
+    height: 100vh;
+    background:linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),url(../img/banner.jpg) no-repeat center center;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.banner h1{
+    font-size: 120px;
+    text-align: center;
+    letter-spacing: 10px;
+    font-family: 'Libre Barcode 39 Text', cursive;
+    font-style: italic;
+
+}
+.banner h1 span{
+    font-size: 120px;
+    font-family: 'Libre Barcode 39 Text', cursive;
+    color: #A722D2;
+}
+
+/*Estilo*/
+.estilo{
+    padding: 60px 0 0 0;
+}
+.estilo h2::after{
+    content: '';
+    display: block;
+    margin: 5px 0 10px 0;
+    background: #7E0885;
+    width: 320px;
+    height: 3px;
+}
+.estilo img{
+    padding-top: 40px; 
+}
+.estilo p{
+    padding-right: 10px;
+}
+/*Fim Estilo*/
+
+
+/*Cidades*/
+.banner-cidades{
+    background: url(../img/city-banner.jpg)no-repeat center center;
+    background-attachment: fixed;
+    background-size: cover;  
+}
+/*FimCidades*/
+
+
+/*Tecnologias*/
+.banner-tecnologias{
+    background: url(../img/tecnologias-banner.gif)no-repeat center center;
+    background-attachment: fixed;
+    background-size: cover; 
+}
+
+/*Fim Tecnologias*/
+
+/*Cenários*/
+.cenarios{
+    margin-bottom: 60px;
+}
+.banner-cenarios {
+    background: url(../img/cenarios-banner.jpg)no-repeat center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+/*Fim Cenários*/
+
+footer{
+    background: #7E0885;
+    padding: 25px 0;
+}
+footer  p:last-of-type{
+    text-align: right
+}

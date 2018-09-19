@@ -1,0 +1,122 @@
+@media only screen and (max-width: 767px){
+	.logo img{
+		width: 80%;
+		margin-top: 10px;
+	}
+
+	header .grid-4{
+		margin-bottom: 0;
+	}
+
+	.banner{
+   	 height: 80vh;
+	}
+
+	.banner h1{
+	    font-size: 46px;
+	}
+	
+	.banner h1 span{
+	    font-size: 46px;
+	    padding-top: 200px;
+	}
+
+	.texto{
+	    margin-bottom: 10px;
+	    padding: 0;
+	}
+
+	.banner-conteudo {
+	    height: 300px; 
+	    margin-top: 30px;
+	}
+
+	.cort-img{
+	    height: 0;
+	    overflow: hidden;
+	}
+
+	.menu-nav ul{
+	text-align: right;
+	}
+
+	.menu-nav ul li{
+	    display: inline-block;
+		margin: 15px 0;
+	}
+
+	.menu-nav ul li a{
+	    padding: 7px 20px;
+	}
+
+	.menu-nav ul li a::after{
+	    transform: scaleX(0);
+	    transform-origin: right center;
+	}
+	.menu-nav ul li a:hover::after, .menu-nav ul li a.active:after {
+	    transform: scaleX(1);
+	}
+
+	/*Menu Mobile*/
+	.mobile-btn {
+		display: block;
+		color: #fff;
+		width: 36px;
+		height: 36px;
+		top: 15px;
+		right: 0;
+		border-top: 4px solid;
+		position: absolute;
+		cursor: pointer;
+		-webkit-backface-visibility:hidden;
+	}
+
+	.mobile-btn::before, .mobile-btn::after {
+		content: '';
+		display: block;
+		margin-top: 6px;
+		height: 4px;
+		background: currentColor;
+		position: relative;
+		transition: transform .2s ease;
+	}
+
+	.mobile-btn.active{
+		border-top-color: transparent;
+	}
+
+	.mobile-btn.active::after {
+		margin-top:0px;
+		top: 2px;
+		transform: rotate(45deg);
+	}
+
+	.mobile-btn.active::before {
+		margin-top: 6px;
+		top: 6px;
+		transform: rotate(135deg);
+	}
+
+	.menu-nav.mobile-menu {
+		position: fixed;
+		background: #7E0885;
+		top: 63px;
+		right: 0;
+		opacity: 0;
+		visibility: hidden;
+		transform: translate3d(50px, 0, 0);
+		transition: .3s;
+	}
+
+	.menu-nav.mobile-menu.active {
+		opacity: 1;
+		visibility: visible;
+		transform: translate3d(0, 0, 0);
+		width: 180px;
+	}
+
+	.menu-nav.mobile-menu li{
+		display: block;
+	}
+
+}
